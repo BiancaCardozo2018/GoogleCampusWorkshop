@@ -1,0 +1,418 @@
+--- COMANDOS USADOS NO WORSHOP DE GIT E GITHUB ---
+
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~
+$ mkdir git-101
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~
+$ ll
+total 5129
+drwxr-xr-x 1 admin 197121       0 fev 12 00:33 '3D Objects'/
+lrwxrwxrwx 1 admin 197121      66 fev 12 00:16 'Ambiente de Impressão' -> '/c/Users/admin/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 admin 197121      66 fev 12 00:16 'Ambiente de Rede' -> '/c/Users/admin/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+drwxr-xr-x 1 admin 197121       0 fev 12 00:18  AppData/
+lrwxrwxrwx 1 admin 197121      28 fev 12 00:16 'Configurações Locais' -> /c/Users/admin/AppData/Local/
+drwxr-xr-x 1 admin 197121       0 fev 12 00:33  Contacts/
+lrwxrwxrwx 1 admin 197121      58 fev 12 00:16  Cookies -> /c/Users/admin/AppData/Local/Microsoft/Windows/INetCookies/
+lrwxrwxrwx 1 admin 197121      30 fev 12 00:16 'Dados de Aplicativos' -> /c/Users/admin/AppData/Roaming/
+drwxr-xr-x 1 admin 197121       0 fev 20 10:50  Desktop/
+drwxr-xr-x 1 admin 197121       0 fev 12 00:33  Documents/
+drwxr-xr-x 1 admin 197121       0 fev 20 10:47  Downloads/
+drwxr-xr-x 1 admin 197121       0 fev 12 00:33  Favorites/
+drwxr-xr-x 1 admin 197121       0 fev 20 19:34  git-101/
+drwxr-xr-x 1 admin 197121       0 fev 12 00:33  Links/
+lrwxrwxrwx 1 admin 197121      59 fev 12 00:16 'Menu Iniciar' -> '/c/Users/admin/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 admin 197121      24 fev 12 00:16 'Meus Documentos' -> /c/Users/admin/Documents/
+drwxr-xr-x 1 admin 197121       0 fev 12 00:35  MicrosoftEdgeBackups/
+lrwxrwxrwx 1 admin 197121      58 fev 12 00:16  Modelos -> /c/Users/admin/AppData/Roaming/Microsoft/Windows/Templates/
+drwxr-xr-x 1 admin 197121       0 fev 12 00:33  Music/
+drwxr-xr-x 1 admin 197121       0 fev 12 20:08  my-first-app/
+-rw-r--r-- 1 admin 197121 2621440 fev 20 13:22  NTUSER.DAT
+-rw-r--r-- 1 admin 197121  819200 fev 12 00:16  ntuser.dat.LOG1
+-rw-r--r-- 1 admin 197121  668672 fev 12 00:16  ntuser.dat.LOG2
+-rw-r--r-- 1 admin 197121   65536 fev 12 00:16  NTUSER.DAT{fac9a00a-2e73-11e9-8577-002454501fb8}.TM.blf
+-rw-r--r-- 1 admin 197121  524288 fev 12 00:16  NTUSER.DAT{fac9a00a-2e73-11e9-8577-002454501fb8}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 admin 197121  524288 fev 12 00:16  NTUSER.DAT{fac9a00a-2e73-11e9-8577-002454501fb8}.TMContainer00000000000000000002.regtrans-ms
+-rw-r--r-- 1 admin 197121      20 fev 12 00:32  ntuser.ini
+drwxr-xr-x 1 admin 197121       0 fev  7 18:38  OneDrive/
+drwxr-xr-x 1 admin 197121       0 fev 12 00:33  Pictures/
+lrwxrwxrwx 1 admin 197121      55 fev 12 00:16  Recent -> /c/Users/admin/AppData/Roaming/Microsoft/Windows/Recent/
+drwxr-xr-x 1 admin 197121       0 fev 12 00:33 'Saved Games'/
+drwxr-xr-x 1 admin 197121       0 fev 12 00:33  Searches/
+lrwxrwxrwx 1 admin 197121      55 fev 12 00:16  SendTo -> /c/Users/admin/AppData/Roaming/Microsoft/Windows/SendTo/
+drwxr-xr-x 1 admin 197121       0 fev 12 00:33  Videos/
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~
+$ cd git-101
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101
+$ git init
+Initialized empty Git repository in C:/Users/admin/git-101/.git/
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ touch README.md
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git add README.md
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   README.md
+
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git commit --m 'First Commit'
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'admin@DESKTOP-3LQNBH0.(none)')
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git config --global user.name "Bianca Cardozo"
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git config --global user.email "bianca1999@gmail.com"
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   README.md
+
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git commit --m 'First Commit'
+[master (root-commit) f804ab0] First Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ touch index.html
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ stt
+bash: stt: command not found
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ ga .
+bash: ga: command not found
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git add index.html
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   index.html
+
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git commit -m 'Add HTML file'
+[master 4a18c1d] Add HTML file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ cd index.html
+bash: cd: index.html: Not a directory
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git log
+commit 4a18c1d0b1f23673ccc94bf30dfe789f469da84d (HEAD -> master)
+Author: Bianca Cardozo <bianca1999@gmail.com>
+Date:   Wed Feb 20 19:49:53 2019 -0300
+
+    Add HTML file
+
+commit f804ab0238f4d661190c23602e1885175d1eb3e4
+Author: Bianca Cardozo <bianca1999@gmail.com>
+Date:   Wed Feb 20 19:45:25 2019 -0300
+
+    First Commit
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git diff index.html
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git branch center-elements
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git branch --list
+  center-elements
+* master
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git checkout center-elements
+Switched to branch 'center-elements'
+M       index.html
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (center-elements)
+$ touch style.css
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (center-elements)
+$ git status
+On branch center-elements
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (center-elements)
+$ git add .
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (center-elements)
+$ git status
+On branch center-elements
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   index.html
+        new file:   style.css
+
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (center-elements)
+$ git commit -m 'Add CSS file'
+[center-elements 2b1be68] Add CSS file
+ 2 files changed, 19 insertions(+)
+ create mode 100644 style.css
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (center-elements)
+$ git merge --no-ff center-elements
+Already up to date.
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (center-elements)
+$ git status
+On branch center-elements
+nothing to commit, working tree clean
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (center-elements)
+$ git diff
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (center-elements)
+$ git branch --list
+* center-elements
+  master
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (center-elements)
+$ cd master
+bash: cd: master: No such file or directory
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (center-elements)
+$ cd..
+bash: cd..: command not found
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (center-elements)
+$ cd.
+bash: cd.: command not found
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (center-elements)
+$ git checkout master
+Switched to branch 'master'
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git branch --list
+  center-elements
+* master
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git branch -d center-elements
+error: The branch 'center-elements' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D center-elements'.
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git merge git-101
+merge: git-101 - not something we can merge
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git merge master
+Already up to date.
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git branch -d center-elements
+error: The branch 'center-elements' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D center-elements'.
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git checkout center-elements
+Switched to branch 'center-elements'
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (center-elements)
+$ git merge master
+Already up to date.
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (center-elements)
+$ git merge center-elements
+Already up to date.
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (center-elements)
+$ git checkout master
+Switched to branch 'master'
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git branch --list
+  center-elements
+* master
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git branch -d center-elements
+error: The branch 'center-elements' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D center-elements'.
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git remote -v
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git merge center-elements
+Updating 4a18c1d..2b1be68
+Fast-forward
+ index.html | 15 +++++++++++++++
+ style.css  |  4 ++++
+ 2 files changed, 19 insertions(+)
+ create mode 100644 style.css
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git branch --list
+  center-elements
+* master
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git branch -d center-elements
+Deleted branch center-elements (was 2b1be68).
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git branch --list
+* master
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git remote -v
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git add remote https://github.com/BiancaCardozo2018/git-101.git
+fatal: pathspec 'remote' did not match any files
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git add origin remote https://github.com/BiancaCardozo2018/git-101.git
+fatal: pathspec 'origin' did not match any files
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git add remote origin https://github.com/BiancaCardozo2018/git-101.git
+fatal: pathspec 'remote' did not match any files
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git remote add origin https://github.com/BiancaCardozo2018/git-101.git
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git remote -v
+origin  https://github.com/BiancaCardozo2018/git-101.git (fetch)
+origin  https://github.com/BiancaCardozo2018/git-101.git (push)
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git push origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 1.11 KiB | 94.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0)
+To https://github.com/BiancaCardozo2018/git-101.git
+ * [new branch]      master -> master
+
+admin@DESKTOP-3LQNBH0 MINGW64 ~/git-101 (master)
+$ git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/BiancaCardozo2018/git-101
+ * branch            master     -> FETCH_HEAD
+   2b1be68..c6a0da4  master     -> origin/master
+Updating 2b1be68..c6a0da4
+Fast-forward
+ index.html | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
